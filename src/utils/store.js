@@ -1,6 +1,18 @@
 import { create } from "zustand"
-
-export const useUiControls = create((set) => ({
+import { persist } from "zustand/middleware"
+/* export const useUiControls = create((set) => ({
     isCollapseSidebar: false,
     setCollapseSidebar: (val) => set({ isCollapseSidebar: val })
-}))
+})) */
+
+export const useUiControls = create(
+    persist(
+        (set) => ({
+            isCollapseSidebar: false,
+            setCollapseSidebar: (val) => set({ isCollapseSidebar: val })
+        }),
+        {
+            name: 'ui-control'
+        }
+    )
+)
