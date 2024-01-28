@@ -18,6 +18,14 @@ body {
     flex-direction: column;
 }
 
+body .sidebar-collapse + .main-content {
+    margin-left: 8rem;
+}
+
+body .main-content {
+    margin-left: 18rem;
+}
+
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {
         display: none;

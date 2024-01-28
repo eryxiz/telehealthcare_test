@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <html lang='en'>
             <body className={kanit.className}>
                 <Sidebar />
-                <div className="ml-72 mr-8 mt-6 flex flex-col gap-4">
+                <div className="main-content mr-8 mt-6 flex flex-col gap-4">
                     <Topbar />
                     {children}
                     <Footer />
