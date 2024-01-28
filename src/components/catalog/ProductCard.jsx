@@ -3,14 +3,15 @@ import { FaPlus } from "react-icons/fa6"
 import CustomSelect from "../ui/CustomSelect"
 import CustomInput from "../ui/CustomInput"
 import Image from "next/image"
+import Link from "next/link"
 
 const ProductCard = () => {
     return (
         <div className='flex flex-col gap-2'>
-            <div className='w-full h-80 bg-white shadow-md rounded-lg self-center flex items-center justify-center'>
+            <div className='w-full h-80 bg-white shadow rounded-lg self-center flex items-center justify-center'>
                 <div className='flex flex-col items-center'>
                     <Image src={"/assets/images/image-placeholder.png"} width={128} height={128} alt='Image Placeholder' />
-                    <span className="text-blue-400">อัตราส่วนรูปภาพ (1:1)</span>
+                    <span className='text-blue-400'>อัตราส่วนรูปภาพ (1:1)</span>
                 </div>
             </div>
             <div className='flex flex-col gap-3'>
@@ -21,9 +22,11 @@ const ProductCard = () => {
                     <CustomInput placeholder='Ex: 1' />
                     <CustomSelect className='col-span-3' />
                 </div>
-                <button type='button' class='w-full bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 flex items-center justify-center gap-2'>
-                    <FaPlus /> Add To Cart
-                </button>
+                <Link href={"/details"}>
+                    <button type='button' className='w-full bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-3 flex items-center justify-center gap-2'>
+                        <FaPlus /> Add To Cart
+                    </button>
+                </Link>
             </div>
         </div>
     )

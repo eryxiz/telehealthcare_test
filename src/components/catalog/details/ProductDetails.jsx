@@ -5,8 +5,8 @@ import { FaPlus } from "react-icons/fa6"
 
 const ProductDetails = () => {
     return (
-        <div className='w-full p-6 shadow-md rounded-md grid grid-cols-4 gap-4'>
-            <div className='w-[24rem] h-[24rem] bg-white shadow-md rounded-lg justify-self-center flex items-center justify-center'>
+        <div className='w-full p-6 shadow rounded-md grid grid-cols-4 gap-4'>
+            <div className='w-[24rem] h-[24rem] bg-white shadow rounded-lg justify-self-center flex items-center justify-center'>
                 <div className='flex flex-col items-center'>
                     <Image src={"/assets/images/image-placeholder.png"} width={128} height={128} alt='Image Placeholder' />
                     <span className='text-blue-400'>อัตราส่วนรูปภาพ (1:1)</span>
@@ -31,7 +31,7 @@ const ProductDetails = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-4'>
                     <CustomInput placeholder='Ex: 1' />
-                    <button type='button' class='w-full h-full col-span-2 bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 flex items-center justify-center gap-2'>
+                    <button type='button' className='w-full h-full col-span-2 bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-3 flex items-center justify-center gap-2'>
                         <FaPlus /> Add To Cart
                     </button>
                 </div>
