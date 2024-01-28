@@ -1,0 +1,32 @@
+import React from "react"
+import { FaPlus } from "react-icons/fa6"
+import CustomSelect from "../ui/CustomSelect"
+import CustomInput from "../ui/CustomInput"
+import Image from "next/image"
+
+const ProductCard = () => {
+    return (
+        <div className='flex flex-col gap-2'>
+            <div className='w-full h-80 bg-white shadow-md rounded-lg self-center flex items-center justify-center'>
+                <div className='flex flex-col items-center'>
+                    <Image src={"/assets/images/image-placeholder.png"} width={128} height={128} alt='Image Placeholder' />
+                    <span className="text-blue-400">อัตราส่วนรูปภาพ (1:1)</span>
+                </div>
+            </div>
+            <div className='flex flex-col gap-3'>
+                <span className='text-blue-500'>3M CAVILION DURABLE CREAM 2G</span>
+                <span className='text-zinc-700'>Product ID : 1190001</span>
+                <span className='text-blue-500 text-xl font-bold'>280.00 บาท/หลอด</span>
+                <div className='grid grid-cols-4 gap-2'>
+                    <CustomInput placeholder='Ex: 1' />
+                    <CustomSelect className='col-span-3' />
+                </div>
+                <button type='button' class='w-full bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 flex items-center justify-center gap-2'>
+                    <FaPlus /> Add To Cart
+                </button>
+            </div>
+        </div>
+    )
+}
+
+export default ProductCard
