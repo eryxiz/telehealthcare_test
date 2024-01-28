@@ -5,7 +5,6 @@ export const sidebarMenu = [
     {
         label: "Dashboard",
         icon: <FaChartPie />,
-        href: "/"
     },
     {
         label: "Seller Management",
