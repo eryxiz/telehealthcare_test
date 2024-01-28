@@ -31,7 +31,7 @@ const ProductDetails = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-4'>
                     <CustomInput placeholder='Ex: 1' />
-                    <button type='button' className='w-full h-full col-span-2 bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-3 flex items-center justify-center gap-2'>
+                    <button type='button' className='btn btn-primary w-full col-span-2'>
                         <FaPlus /> Add To Cart
                     </button>
                 </div>

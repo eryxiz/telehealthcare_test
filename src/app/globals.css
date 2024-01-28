@@ -26,12 +26,36 @@ body .main-content {
     margin-left: 18rem;
 }
 
+@layer components {
+    .btn {
+        @apply text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-3 flex items-center justify-center gap-2 bg-slate-600
+    }
+
+    .btn-primary {
+        @apply bg-blue-600 hover:bg-blue-600
+    }
+
+    .btn-warning {
+        @apply bg-yellow-500 hover:bg-yellow-400
+    }
+
+    .btn-ghost-primary {
+        @apply text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white bg-transparent
+    }
+
+    .btn-shadow-primary {
+        @apply bg-blue-600 hover:scale-95 shadow-lg shadow-blue-500/50 hover:shadow-none
+    }
+
+
+}
+
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
     .no-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }

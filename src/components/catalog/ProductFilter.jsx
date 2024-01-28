@@ -26,10 +26,10 @@ const ProductFilter = () => {
                 <CustomInput placeholder='Enter Product Id' name='product_id' />
             </div>
             <div className='flex items-end justify-end col-span-1 xl:col-span-3 gap-2'>
-                <button type='button' className='text-white bg-blue-600 hover:scale-95 transition-all duration-200 focus:outline-none shadow-lg shadow-blue-500/50 hover:shadow-none rounded-lg text-sm px-5 py-2.5 text-center flex items-center gap-2'>
+                <button type='button' className='btn btn-shadow-primary'>
                     <FaMagnifyingGlass /> Search
                 </button>
-                <button type='button' className='text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-2.5 text-center flex items-center gap-2'>
+                <button type='button' className='btn btn-ghost-primary'>
                     Reset
                 </button>
             </div>

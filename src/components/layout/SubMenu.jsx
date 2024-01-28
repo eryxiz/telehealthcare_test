@@ -1,7 +1,7 @@
 "use client"
 import { usePathname } from "next/navigation"
 import React, { useEffect, useState } from "react"
-import { FaAngleDown, FaAngleUp, FaMinus } from "react-icons/fa6"
+import { FaAngleDown, FaMinus } from "react-icons/fa6"
 import { motion } from "framer-motion"
 import Link from "next/link"
 

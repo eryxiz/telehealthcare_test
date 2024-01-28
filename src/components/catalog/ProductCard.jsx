@@ -23,7 +23,7 @@ const ProductCard = () => {
                     <CustomSelect className='col-span-3' />
                 </div>
                 <Link href={"/details"}>
-                    <button type='button' className='w-full bg-blue-600 hover:bg-blue-600 text-white transition-all duration-200 focus:outline-none rounded-lg text-sm px-5 py-3 flex items-center justify-center gap-2'>
+                    <button type='button' className='btn btn-primary w-full'>
                         <FaPlus /> Add To Cart
                     </button>
                 </Link>

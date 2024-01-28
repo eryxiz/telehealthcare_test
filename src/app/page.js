@@ -1,6 +1,5 @@
 import ProductFilter from "@/components/catalog/ProductFilter"
 import ProductList from "@/components/catalog/ProductList"
-import Topbar from "@/components/layout/Topbar"
 import Breadcrumb from "@/components/ui/Breadcrumb"
 import Link from "next/link"
 
